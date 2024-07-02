@@ -44,5 +44,13 @@ document.addEventListener("DOMContentLoaded", function(){
             item.classList.toggle('cs-active')
         }
         item.addEventListener('click', onClick)
-        }                      
+        }   
+    // ----------- FAQ ------------//
+    const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+        for (const item of faqItems) {
+            const onClick = () => {
+            item.classList.toggle('active')
+        }
+        item.addEventListener('click', onClick)
+        }                   
  });
